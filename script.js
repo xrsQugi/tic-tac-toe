@@ -25,8 +25,8 @@ const winCombinations = [
     [2, 4, 6]
 ];
 
-let cross = '<svg class="cross"><use href="./symbol-defs.svg#icon-cross"></use></svg>';
-let circle = '<svg class="circle"><use href="./symbol-defs.svg#icon-circle"></use></svg>';
+let cross = '<svg class="cross"><use href="/other/symbol-defs.svg#icon-cross"></use></svg>';
+let circle = '<svg class="circle"><use href="/other/symbol-defs.svg#icon-circle"></use></svg>';
 
 //!----- Клетки поля изначально пустые -----
 let options = ["", "", "", "", "", "", "", "", ""];

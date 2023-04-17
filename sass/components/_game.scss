@@ -1,14 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
-body{
-    font-family: 'Nunito', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-}
-
 h1{
     text-align: center;
     color: #252525;
@@ -35,21 +24,21 @@ h1{
     justify-content: center;
     flex-direction: row;
     gap: 10px;
-}
 
-.player-card{
-    width: 140px;
-    height: 120px;
-    background-color: #252525;
-    border-radius: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    font-size: 20px;
-    display: flex;
-    color: #FFFFFF;
-    gap: 5px;
+    .player-card{
+        width: 140px;
+        height: 120px;
+        background-color: #252525;
+        border-radius: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-size: 20px;
+        display: flex;
+        color: #FFFFFF;
+        gap: 5px;
+    }
 }
 
 #statusText{
@@ -82,17 +71,17 @@ h1{
     align-items: center;
     justify-content: center;
     transition: scale .4s ease-in-out, background-color .4s ease-in-out;
-}
 
-.cell:hover{
-    scale: 1.03;
-    background-color: #4D4D4D;
-}
+    &:hover{
+        scale: 1.03;
+        background-color: #4D4D4D;
+    }
 
-.cell svg{
-    width: 80px;
-    height: 80px;
-    fill: #FFFFFF;
+    svg{
+        width: 80px;
+        height: 80px;
+        fill: #FFFFFF;
+    }
 }
 
 #restartBtn{
@@ -107,18 +96,18 @@ h1{
 
 .win {
     background-color: #2D412D;
-}
 
-.win:hover{
-    background-color: #2D412D;
+    &:hover{
+        background-color: #2D412D;
+    }
 }
 
 .draw{
     background-color: #374D5C;
-}
 
-.draw:hover{
-    background-color: #374D5C;
+    &:hover{
+        background-color: #374D5C;
+    }
 }
 
 /* SMARTPHONE */
@@ -131,14 +120,15 @@ h1{
         width: 300px;
         height: 70px;
         border-radius: 15px;
+
+        .player-card{
+            width: 90px;
+            height: 70px;
+            border-radius: 15px;
+            font-size: 18px;
+        }
     }
     
-    .player-card{
-        width: 90px;
-        height: 70px;
-        border-radius: 15px;
-        font-size: 18px;
-    }
     #statusText{
         font-size: 30px;
     }
@@ -148,20 +138,20 @@ h1{
         padding: 10px 0;
         gap: 10px;
         border-radius: 15px;
-    }
-    
-    .cell{
-        width: 90px;
-        height: 90px;
-        border-radius: 15px;
-        font-size: 75px;
+
+        .cell{
+            width: 90px;
+            height: 90px;
+            border-radius: 15px;
+            font-size: 75px;
+
+            svg{
+                width: 50px;
+                height: 50px;
+            }
+        }
     }
 
-    .cell svg{
-        width: 50px;
-        height: 50px;
-    }
-    
     #restartBtn{
         width: 210px;
         height: 50px;
